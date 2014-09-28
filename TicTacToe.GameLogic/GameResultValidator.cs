@@ -65,7 +65,7 @@
             // diagonals check
             // top left to bottom right check
             var topLeftBottomRightDiagonal = string.Empty;
-            topLeftBottomRightDiagonal += board[0, 0] + board[1, 1] + board[2, 2];
+            topLeftBottomRightDiagonal += board[0, 0].ToString() + board[1, 1].ToString() + board[2, 2].ToString();
 
             if (topLeftBottomRightDiagonal.Contains("XXX"))
             {
@@ -78,7 +78,7 @@
 
             // top left to bottom right check
             var topRgightBottomLeftDiagonal = string.Empty;
-            topRgightBottomLeftDiagonal += board[0, 0] + board[1, 1] + board[2, 2];
+            topRgightBottomLeftDiagonal += board[0, 2].ToString() + board[1, 1].ToString() + board[2, 0].ToString();
 
             if (topRgightBottomLeftDiagonal.Contains("XXX"))
             {
